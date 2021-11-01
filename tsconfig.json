@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": ".",
+    "paths": {
+      "core/*": ["src/core/*"],
+      "components/*": ["src/components/*"],
+      "systems/*": ["src/systems/*"],
+      "math/*": ["src/math/*"]
+    },
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "ES6",
+    "target": "ES5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "plugins": [
+      { "transform": "@zerollup/ts-transform-paths" }
+    ]
+  },
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
+  }
+}

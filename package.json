@@ -1,0 +1,23 @@
+{
+  "name": "@ecs-engine/core",
+  "version": "0.0.1",
+  "description": "An Entity Component System (ECS) game engine framework.",
+  "main": "dist/main.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "author": "Tom Chamberlain",
+  "license": "ISC",
+  "devDependencies": {
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "ts-loader": "^9.2.6",
+    "typedoc": "^0.22.7",
+    "typescript": "^4.4.4",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
